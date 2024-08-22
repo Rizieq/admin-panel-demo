@@ -18,6 +18,7 @@ function App() {
     const fetchAdmins = async () => {
       try {
         const data = await getAdmins();
+        console.log(data.data);
         setAdmins(data.data);
         setLoading(false);
       } catch (err) {
